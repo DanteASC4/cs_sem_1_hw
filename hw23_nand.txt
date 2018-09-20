@@ -1,0 +1,5 @@
+#Name: Dante Rivera
+#Date:  August 28th
+#Simulates a nand gate
+
+out = ((not in1 and in2) not (in1 and in2) or (in2 not in1) or (in1 and in2))
