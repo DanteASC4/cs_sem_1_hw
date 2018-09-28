@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 #Open the CSV file and store in pop
-pop = pd.read_csv('data.csv',skiprows=5)
+pop = pd.read_csv('nycHistPop.csv',skiprows=5)
 
 burrow = input('Enter a borough name:   ')
 file = input('Enter a file name:    ')
