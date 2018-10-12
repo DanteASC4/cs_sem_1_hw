@@ -22,4 +22,4 @@ pop.plot(x = 'Year', y = 'Fraction')
 
 #Save to the file:  fractionBX.png
 fig = plt.gcf()
-fig.savefig(file + '.png')
+fig.savefig(file)
