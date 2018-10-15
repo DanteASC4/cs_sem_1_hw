@@ -2,4 +2,4 @@
 #Date:  August 28th
 #Simulates a nand gate
 
-out = ((in1 and in2) or(not in1 and in2) or (in1 and not in2) and not (not in1 and not in2))
+out = ((not in1 and not in2) or (not in1 and in2) or (in1 and not in2))

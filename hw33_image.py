@@ -11,8 +11,8 @@ i_name = input('Enter the image name:   ')
 o_name = input('Enter the output name:    ')
 
 
-img = Image.open(i_name + ".png")
+img = Image.open(i_name )
 w, h = img.size
 n = h/2
 cropped_img = img.crop((0, n, w/2, h))
-cropped_img.save(o_name +".png")
+cropped_img.save(o_name)

@@ -2,7 +2,8 @@
 #Date: September 28th
 #Map of nyc, with marker on hunter
 
-#Using folium to make maps
+#Using folium to make maps     name = "Accident at " + row["TIME"]
+
 import folium
 
 #Creating a map

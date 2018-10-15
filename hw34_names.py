@@ -10,13 +10,10 @@ names = input('Enter comma seperated names:     ').split(';')
 
 def name_sorter(nm):
     nm.pop()
-    # print(len(nm))
     for i in range(len(nm)):
-        print(nm[i].split(',')[0], nm[i].split(',')[1])
+        print(nm[i].split(',')[1] +  nm[i].split(',')[0])
 
 
-
-    # print(nm[0].split(',')[0],nm[0].split(',')[1])
 
 
 
