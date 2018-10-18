@@ -12,20 +12,20 @@ c_f = input('Enter CSV file name:    ')
 o_f = input('Enter an output file name:  ')
 
 start = time.time()
-accidents = pd.read_csv(c_f)
+accidents = pd.read_csv(c_f,encoding="utf-8-sig")
+accidents.dropna(how='any')
 
 #Creating a map
 mapCUNY = folium.Map(location=[40.75, -74.125], zoom_start=10)
 
-for i in range(10000):
-    lat = row["LATITUDE"]
-    lon = row["LONGITUDE"]
-    print(lat, lon)
-    name = "Accident at " + row["TIME"]
-    if math.isnan(lat) == False and math.isnan(lon) == False:
-        newMarker = folium.Marker([lat, lon], popup=name)
-        newMarker.add_to(mapCUNY)
 
+lat = pd.to_numeric(accidents["LATITUDE"], errors='coerce').fillna(0)
+lon = pd.to_numeric(accidents["LONGITUDE"], errors='coerce').fillna(0)
+
+
+for i in range(789):
+
+    newMarker = folium.Marker(location=[lat[i], lon[i]]).add_to(mapCUNY)
 
 
 #Saving the created map:

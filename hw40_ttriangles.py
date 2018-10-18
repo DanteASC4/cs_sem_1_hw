@@ -1,9 +1,11 @@
-#CSci 127 Teaching Staff
-#February 2018
-#A template for a program that draws nested triangles
-#Modified by: Dante Rivera
+# CSci 127 Teaching Staff
+# February 2018
+# A template for a program that draws nested triangles
+# Modified by: Dante Rivera
 
 import turtle
+
+
 def setUp(t, dist, col):
     """
     Takes three parameters, a turtle, t, the distance, dist,
@@ -26,7 +28,7 @@ def triangle(t, length):
         for i in range(3):
             t.forward(length)
             t.left(120)
-        triangle(t, length/2)
+        triangle(t, length / 2)
 
 
 def nestedTriangle(t, length):
@@ -40,22 +42,17 @@ def nestedTriangle(t, length):
         for i in range(3):
             t.forward(length)
             t.left(120)
-            nestedTriangle(t, length/1.5)
+            nestedTriangle(t, length / 2)
 
 
 def main():
     n = int(input('Enter length: '))
-
     tom = turtle.Turtle()
     setUp(tom, -100, "darkgreen")
     triangle(tom, n)
-
-
     tess = turtle.Turtle()
     setUp(tess, 100, "steelblue")
     nestedTriangle(tess, n)
-
-
 
 
 if __name__ == "__main__":

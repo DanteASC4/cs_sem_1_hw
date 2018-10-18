@@ -1,5 +1,8 @@
-all inputs False and True =>
+# CSci 127 Teaching Staff
+# February 2018
+# A template for a program that draws nested triangles
+# Modified by: Dante Rivera
 
-first input False, second true =>
+import turtle
 
-vice versa => 
+dat_t = turtle.Turtle()
