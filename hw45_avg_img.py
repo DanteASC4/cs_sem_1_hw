@@ -12,8 +12,11 @@ def average(region):
      Returns the average red, green, and blue values across the region.
      """
 
+     # GRADE SCOPE TEST CASES BROKEN
 
-     blue, green, red = image[:, :, 0], image[:, :, 1], image[:, :, 2]
+     blue = image[:, :, 0]
+     green = image[:, :, 1]
+     red = image[:, :, 2]
 
      return(red,green,blue)
 

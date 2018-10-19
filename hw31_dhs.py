@@ -6,6 +6,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
+
 # Prompting for df and output name
 f_name = input('Enter the file name:  ')
 o_name = input('Enter the output file name:  ')
@@ -14,14 +15,11 @@ o_name = input('Enter the output file name:  ')
 homeless = pd.read_csv(f_name)
 
 # Getting fraction
-homeless['Fraction'] = homeless["Total Children in Shelter"] / homeless['Total Individuals in Shelter']
+homeless['Fraction Children'] = homeless["Total Children in Shelter"] / homeless['Total Individuals in Shelter']
 
 # Graphing data
-homeless.plot(x="Date of Census", y="Fraction")
+homeless.plot(x="Date of Census", y="Fraction Children")
 
 # Saving figure
 fig = plt.gcf()
-fig.savefig('student.png')
-
-# Display data
-plt.show()
+fig.savefig(o_name)

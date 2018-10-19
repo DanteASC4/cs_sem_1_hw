@@ -48,6 +48,7 @@ def getLocale():
 
      lat = float(input('Enter your latitude:   '))
      lon = float(input('Enter your longitude:   '))
+
      ###################################
      ### FILL IN YOUR CODE HERE      ###
      ###################################
@@ -59,8 +60,10 @@ def computeDist(x1,y1,x2,y2):
      Computes the squared distance between two points (x1,y1) and (x2,y2) and
      Returns (x1-x2)^2 + (y1-y2)^2
      """
-     d = 0.0   #<-- placeholder, can remove once defined.
+     x = (x1 - x2) ** 2
+     y = (y1 - y2) ** 2
 
+     d = x + y
      ###################################
      ### FILL IN YOUR CODE HERE      ###
      ###################################

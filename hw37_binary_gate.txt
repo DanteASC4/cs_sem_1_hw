@@ -4,14 +4,8 @@
 
 
 
-# if in1 and in2 are false:
-#   out1 true, out2 false, out3 false
-# if in1 true and in2 false:
-#   out1 false, out2 true, out3 false
-# if in1 true and in2 true:
-#   out1 false, out2 false, out3 true
 
 
 out1 = (not in1 and not in2)
 out2 = ((in1 and not in2) or (not in1 and in2))
-out3 = ((not in1 and not in2) or (not in1 and in1))
+out3 = ((not in1 and not in2) or (not in1 and in1)
