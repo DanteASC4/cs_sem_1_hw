@@ -1,8 +1,6 @@
-# CSci 127 Teaching Staff
-# February 2018
-# A template for a program that draws nested triangles
-# Modified by: Dante Rivera
 
-import turtle
+a = 1
+b = 2
 
-dat_t = turtle.Turtle()
+
+print(a + b)

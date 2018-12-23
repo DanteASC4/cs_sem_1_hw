@@ -1,3 +1,8 @@
+#Name: Dante Rivera
+#Date: October 2018
+#A turtle that walks randomly for 100 steps
+
+
 import random
 import turtle
 
